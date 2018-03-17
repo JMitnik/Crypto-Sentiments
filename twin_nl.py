@@ -61,9 +61,9 @@ def __get_tweet_content(url):
 
 def __split_tweets_by(tweets, split_date):
     if split_date == DAY_STRING:
-        return __split_tweets_by_day(tweets)
+        return split_tweets_by_day(tweets)
 
-def __split_tweets_by_day(tweets):
+def split_tweets_by_day(tweets):
     days = []
 
     # date_obj = defaultdict(list)
