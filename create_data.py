@@ -1,0 +1,8 @@
+import CreateDataService
+
+START_DATE = "2018-01-01T22:10:00.000Z"
+END_DATE = "2018-02-02T23:20:00.000Z"
+NR_TWEETS=2
+SOURCE = "sm"
+
+CreateDataService.createData(START_DATE, END_DATE, NR_TWEETS, SOURCE)

@@ -52,3 +52,18 @@ def sum_sentiment_scores(days):
 
         days[index] = day
     return days
+
+def get_freq_distr_for_tweets(tweets):
+    regular_words = []
+
+    for i in tweets:
+        words = i['content'].split(' ')
+        for j in words:
+            regular_words.append(j)
+
+    fdist = nltk.FreqDist(regular_words)
+
+    for word in sorted(fdist):
+        print(word, '->', fdist[word], end='; ')
+
+    return sorted(fdist)
