@@ -3,10 +3,16 @@ import CreateDataService
 import ReadDataService
 import ProcessDataService
 
-regular_tweets = ReadDataService.read_data('1000', 'regular-tweets.csv')
-bitcoin_tweets = ReadDataService.read_data('1000', 'bitcoin-tweets.csv')
-print(ProcessDataService.get_freq_distr_for_tweets(regular_tweets))
+import BitcoinService
 
-# bitcoin_days = ProcessDataService.split_tweets_by_day(bitcoin_tweets)
+DATA_SOURCE = "sm"
 
-CreateDataService.writeDayScoreToCSV('bitcoin-days.csv', bitcoin_days)
+try:
+    regular_tweets = ReadDataService.read_data('sm', 'regular-tweets.csv')
+    bitcoin_tweets = ReadDataService.read_data('sm', 'bitcoin-tweets.csv')
+except OSError:
+    print("Create some data first! Use the create_data.py app")
+    raise
+
+bitcoin_days = ProcessDataService.get_sentiments_by_days(bitcoin_tweets)
+CreateDataService.writeDayScoreToCSV('sentiment-bitcoin-days.csv', DATA_SOURCE, bitcoin_days)

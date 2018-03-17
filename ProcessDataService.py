@@ -31,6 +31,10 @@ def split_tweets_by_day(tweets):
 
     return days
 
+def get_sentiments_by_days(tweets):
+    collection = split_tweets_by_day(tweets)
+    return sum_sentiment_scores(collection)
+
 def sum_sentiment_scores(days):
     for (index, day) in enumerate(days):
         pos = 0

@@ -19,6 +19,8 @@ def createData(start_date, end_date, nr,source):
     _writeTweetSourceToCsv('data/'+source+'/regular-tweets.csv', regular_tweets)
     _writeTweetSourceToCsv('data/'+source+'/bitcoin-tweets.csv', bitcoin_tweets)
 
+def createBitcoinData(btc_dataframe, source):
+    btc_dataframe.to_csv('data/'+source+'/bitcoin-values.csv')
 
 def _writeTweetSourceToCsv(file_name, tweets):
     with open(file_name, 'w', encoding="utf-8") as file:
@@ -28,8 +30,9 @@ def _writeTweetSourceToCsv(file_name, tweets):
             writer.writerow(
                 [tweet['date'], tweet['content'][0], tweet['author']])
 
-def writeDayScoreToCSV(file_name, days):
-    with open(file_name, 'w', encoding="utf-8") as file:
+def writeDayScoreToCSV(file_name, source, days):
+    file_source = 'data/'+source+'/'+file_name
+    with open(file_source, 'w', encoding="utf-8") as file:
         writer = csv.writer(file)
 
         for day in days:
