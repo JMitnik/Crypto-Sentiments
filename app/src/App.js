@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import ReactDom from 'react-dom';
 import logo from './logo.svg';
-import TweetOverview from './TweetOverview';
+import DataBoard from './Databoard';
 import './App.css';
 import './_main.scss';
 
@@ -13,7 +12,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <TweetOverview></TweetOverview>
+        <DataBoard></DataBoard>
       </div>
     );
   }

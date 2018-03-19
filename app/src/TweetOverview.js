@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import List from './List';
+import Chart from 'chart.js';
 
 const TWEET_URL = `http://127.0.0.1:5000/tweets`;
 
@@ -19,15 +19,21 @@ class TweetOverview extends Component {
         .then(data => this.setState({tweetDays: data}));
     }
 
+    componentDidMount() {
+        this.insertChart();
+    }
+
+    insertChart = () => {
+
+    }
+
     render() {
         return (
             <div>
                 <div>
                     <button onClick={e => this.fetchTweets(e)}></button>
                 </div>
-                {this.state.tweets.length > 0
-                ? (<List items={this.state.tweetDays}></List>)
-                : (<div>Empty list</div>)}
+                <canvas id="test-chart" className="test-chart"></canvas>
             </div>
         )
     }
