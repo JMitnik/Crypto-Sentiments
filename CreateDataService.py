@@ -2,12 +2,12 @@ import twin_nl as TweetService
 import csv
 
 def createData(start_date, end_date, nr,source):
-    regular_tweets = TweetService.get_tweets(
-        start_date,
-        end_date,
-        nr,
-        'een,het,de'
-    )
+    # regular_tweets = TweetService.get_tweets(
+    #     start_date,
+    #     end_date,
+    #     nr,
+    #     'een,het,de'
+    # )
 
     bitcoin_tweets = TweetService.get_tweets(
        start_date,
@@ -16,7 +16,7 @@ def createData(start_date, end_date, nr,source):
         'bitcoin'
     )
 
-    _writeTweetSourceToCsv('data/'+source+'/regular-tweets.csv', regular_tweets)
+    # _writeTweetSourceToCsv('data/'+source+'/regular-tweets.csv', regular_tweets)
     _writeTweetSourceToCsv('data/'+source+'/bitcoin-tweets.csv', bitcoin_tweets)
 
 def createBitcoinData(btc_dataframe, source):

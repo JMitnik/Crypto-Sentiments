@@ -1,0 +1,207 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BeautifulSoup	../twin_nl.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:5
+BitcoinService	../app.py	/^import BitcoinService$/;"	kind:namespace	line:3
+BitcoinService	../create_data.py	/^import BitcoinService$/;"	kind:namespace	line:2
+BitcoinService	../main.py	/^import BitcoinService$/;"	kind:namespace	line:6
+BitcoinService.py	../BitcoinService.py	1;"	kind:file	line:1
+Counter	../NRC.py	/^from collections import defaultdict, Counter$/;"	kind:namespace	line:3
+CreateDataService	../create_data.py	/^import CreateDataService$/;"	kind:namespace	line:1
+CreateDataService	../main.py	/^import CreateDataService$/;"	kind:namespace	line:2
+CreateDataService.py	../CreateDataService.py	1;"	kind:file	line:1
+DATA_SOURCE	../main.py	/^DATA_SOURCE = "sm"$/;"	kind:variable	line:8
+DAY_STRING	../ProcessDataService.py	/^DAY_STRING = "day"$/;"	kind:variable	line:8
+DAY_STRING	../twin_nl.py	/^DAY_STRING = "day"$/;"	kind:variable	line:10
+END_DATE	../create_data.py	/^END_DATE = "2017-12-10T23:20:00.000Z"$/;"	kind:variable	line:7
+ENword	../readNRCLexiconExcel.py	/^    ENword = sheet['A' + str(row)].value$/;"	kind:variable	line:26
+EmotionModel	../NRC.py	/^class EmotionModel:$/;"	kind:class	line:6
+Exporter.py	../libraries/oldtweets/Exporter.py	1;"	kind:file	line:1
+Flask	../app.py	/^from flask import Flask, jsonify, make_response, request$/;"	kind:namespace	line:1
+Main.py	../libraries/oldtweets/Main.py	1;"	kind:file	line:1
+NLword	../readNRCLexiconExcel.py	/^    NLword = sheet['I' + str(row)].value$/;"	kind:variable	line:27
+NRC.py	../NRC.py	1;"	kind:file	line:1
+NR_TWEETS	../create_data.py	/^NR_TWEETS=8000$/;"	kind:variable	line:9
+ProcessDataService	../main.py	/^import ProcessDataService$/;"	kind:namespace	line:4
+ProcessDataService.py	../ProcessDataService.py	1;"	kind:file	line:1
+PyQuery	../libraries/oldtweets/got/manager/TweetManager.py	/^from pyquery import PyQuery$/;"	kind:namespace	line:3
+PyQuery	../libraries/oldtweets/got3/manager/TweetManager.py	/^from pyquery import PyQuery$/;"	kind:namespace	line:3
+REGEX_DAY_PATTERN	../BitcoinService.py	/^REGEX_DAY_PATTERN = '(.*)T'$/;"	kind:variable	line:10
+REGEX_DAY_PATTERN	../ProcessDataService.py	/^REGEX_DAY_PATTERN = '(.*)T'$/;"	kind:variable	line:6
+REGEX_DAY_PATTERN	../create_data.py	/^REGEX_DAY_PATTERN = '(.*)T'$/;"	kind:variable	line:8
+REGEX_DAY_PATTERN	../twin_nl.py	/^REGEX_DAY_PATTERN = '(.*)T'$/;"	kind:variable	line:8
+REGEX_TIME_PATTERN	../ProcessDataService.py	/^REGEX_TIME_PATTERN = ''$/;"	kind:variable	line:7
+REGEX_TIME_PATTERN	../twin_nl.py	/^REGEX_TIME_PATTERN = ''$/;"	kind:variable	line:9
+ReadDataService	../main.py	/^import ReadDataService$/;"	kind:namespace	line:3
+ReadDataService.py	../ReadDataService.py	1;"	kind:file	line:1
+SOURCE	../create_data.py	/^SOURCE = "lg"$/;"	kind:variable	line:10
+START_DATE	../create_data.py	/^START_DATE = "2017-09-01T22:10:00.000Z"$/;"	kind:variable	line:6
+TWITTER_API_URL	../twin_nl.py	/^TWITTER_API_URL = "https:\/\/twitter.com\/{}\/status\/{}"$/;"	kind:variable	line:13
+Tweet	../libraries/oldtweets/got/models/Tweet.py	/^class Tweet:$/;"	kind:class	line:1
+Tweet	../libraries/oldtweets/got/models/__init__.py	/^from Tweet import Tweet/;"	kind:namespace	line:1
+Tweet	../libraries/oldtweets/got3/models/Tweet.py	/^class Tweet:$/;"	kind:class	line:1
+Tweet	../libraries/oldtweets/got3/models/__init__.py	/^from .Tweet import Tweet/;"	kind:namespace	line:1
+Tweet.py	../libraries/oldtweets/got/models/Tweet.py	1;"	kind:file	line:1
+Tweet.py	../libraries/oldtweets/got3/models/Tweet.py	1;"	kind:file	line:1
+TweetCriteria	../libraries/oldtweets/got/manager/TweetCriteria.py	/^class TweetCriteria:$/;"	kind:class	line:1
+TweetCriteria	../libraries/oldtweets/got/manager/__init__.py	/^from TweetCriteria import TweetCriteria$/;"	kind:namespace	line:1
+TweetCriteria	../libraries/oldtweets/got3/manager/TweetCriteria.py	/^class TweetCriteria:$/;"	kind:class	line:1
+TweetCriteria	../libraries/oldtweets/got3/manager/__init__.py	/^from .TweetCriteria import TweetCriteria$/;"	kind:namespace	line:1
+TweetCriteria.py	../libraries/oldtweets/got/manager/TweetCriteria.py	1;"	kind:file	line:1
+TweetCriteria.py	../libraries/oldtweets/got3/manager/TweetCriteria.py	1;"	kind:file	line:1
+TweetManager	../libraries/oldtweets/got/manager/TweetManager.py	/^class TweetManager:$/;"	kind:class	line:5
+TweetManager	../libraries/oldtweets/got/manager/__init__.py	/^from TweetManager import TweetManager/;"	kind:namespace	line:2
+TweetManager	../libraries/oldtweets/got3/manager/TweetManager.py	/^class TweetManager:$/;"	kind:class	line:5
+TweetManager	../libraries/oldtweets/got3/manager/__init__.py	/^from .TweetManager import TweetManager/;"	kind:namespace	line:2
+TweetManager.py	../libraries/oldtweets/got/manager/TweetManager.py	1;"	kind:file	line:1
+TweetManager.py	../libraries/oldtweets/got3/manager/TweetManager.py	1;"	kind:file	line:1
+TweetService	../CreateDataService.py	/^import twin_nl as TweetService$/;"	kind:namespace	line:1
+TweetService	../app.py	/^import twin_nl as TweetService$/;"	kind:namespace	line:2
+__fetch_meta_tweets	../twin_nl.py	/^def __fetch_meta_tweets(url):$/;"	kind:function	line:29
+__get_meta_tweets_contents	../twin_nl.py	/^def __get_meta_tweets_contents(meta_tweets):$/;"	kind:function	line:33
+__get_tweet_content	../twin_nl.py	/^def __get_tweet_content(url):$/;"	kind:function	line:54
+__init__	../NRC.py	/^    def __init__(self, model, lexicon):$/;"	kind:member	line:14
+__init__	../libraries/oldtweets/got/manager/TweetCriteria.py	/^	def __init__(self):$/;"	kind:member	line:3
+__init__	../libraries/oldtweets/got/manager/TweetManager.py	/^	def __init__(self):$/;"	kind:member	line:7
+__init__	../libraries/oldtweets/got/models/Tweet.py	/^	def __init__(self):$/;"	kind:member	line:3
+__init__	../libraries/oldtweets/got3/manager/TweetCriteria.py	/^	def __init__(self):$/;"	kind:member	line:3
+__init__	../libraries/oldtweets/got3/manager/TweetManager.py	/^	def __init__(self):$/;"	kind:member	line:7
+__init__	../libraries/oldtweets/got3/models/Tweet.py	/^	def __init__(self):$/;"	kind:member	line:3
+__init__.py	../libraries/oldtweets/got/__init__.py	1;"	kind:file	line:1
+__init__.py	../libraries/oldtweets/got/manager/__init__.py	1;"	kind:file	line:1
+__init__.py	../libraries/oldtweets/got/models/__init__.py	1;"	kind:file	line:1
+__init__.py	../libraries/oldtweets/got3/__init__.py	1;"	kind:file	line:1
+__init__.py	../libraries/oldtweets/got3/manager/__init__.py	1;"	kind:file	line:1
+__init__.py	../libraries/oldtweets/got3/models/__init__.py	1;"	kind:file	line:1
+__split_tweets_by	../twin_nl.py	/^def __split_tweets_by(tweets, split_date):$/;"	kind:function	line:62
+_writeTweetSourceToCsv	../CreateDataService.py	/^def _writeTweetSourceToCsv(file_name, tweets):$/;"	kind:function	line:25
+app	../app.py	/^app = Flask(__name__)$/;"	kind:variable	line:5
+app.py	../app.py	1;"	kind:file	line:1
+bitcoin_days	../main.py	/^bitcoin_days = ProcessDataService.get_sentiments_by_days(bitcoin_tweets)$/;"	kind:variable	line:17
+bitcoin_tweets	../main.py	/^    bitcoin_tweets = ReadDataService.read_data('sm', 'bitcoin-tweets.csv')$/;"	kind:variable	line:12
+btc	../create_data.py	/^btc = BitcoinService.get_bitcoin_values(btc_start_date, btc_end_date)$/;"	kind:variable	line:14
+calculate_perc	../NRC.py	/^    def calculate_perc(val, total):$/;"	kind:member	line:73
+codecs	../libraries/oldtweets/Exporter.py	/^import sys,getopt,datetime,codecs$/;"	kind:namespace	line:2
+cookiejar	../libraries/oldtweets/got3/manager/TweetManager.py	/^import urllib.request, urllib.parse, urllib.error,urllib.request,urllib.error,urllib.parse,json,re,datetime,sys,http.cookiejar$/;"	kind:namespace	line:1
+cookielib	../libraries/oldtweets/got/manager/TweetManager.py	/^import urllib,urllib2,json,re,datetime,sys,cookielib$/;"	kind:namespace	line:1
+createBitcoinData	../CreateDataService.py	/^def createBitcoinData(btc_dataframe, source):$/;"	kind:function	line:22
+createData	../CreateDataService.py	/^def createData(start_date, end_date, nr,source):$/;"	kind:function	line:4
+create_data.py	../create_data.py	1;"	kind:file	line:1
+create_model	../NRC.py	/^    def create_model(self, model, filename):$/;"	kind:member	line:20
+csv	../CreateDataService.py	/^import csv$/;"	kind:namespace	line:2
+csv	../ReadDataService.py	/^import csv$/;"	kind:namespace	line:1
+datetime	../BitcoinService.py	/^import datetime$/;"	kind:namespace	line:6
+datetime	../libraries/oldtweets/Exporter.py	/^import sys,getopt,datetime,codecs$/;"	kind:namespace	line:2
+datetime	../libraries/oldtweets/got/manager/TweetManager.py	/^import urllib,urllib2,json,re,datetime,sys,cookielib$/;"	kind:namespace	line:1
+datetime	../libraries/oldtweets/got3/manager/TweetManager.py	/^import urllib.request, urllib.parse, urllib.error,urllib.request,urllib.error,urllib.parse,json,re,datetime,sys,http.cookiejar$/;"	kind:namespace	line:1
+defaultdict	../NRC.py	/^from collections import defaultdict, Counter$/;"	kind:namespace	line:3
+defaultdict	../ProcessDataService.py	/^from collections import defaultdict$/;"	kind:namespace	line:2
+defaultdict	../twin_nl.py	/^from collections import defaultdict$/;"	kind:namespace	line:6
+emo	../NRC.py	/^    emo = EmotionModel(model,lexicon)$/;"	kind:variable	line:83
+emo	../ProcessDataService.py	/^emo = EmotionModel("test.p", lexicon="lexicon.txt")$/;"	kind:variable	line:9
+en_words	../readNRCLexiconExcel.py	/^en_words = {}$/;"	kind:variable	line:15
+error	../libraries/oldtweets/got3/manager/TweetManager.py	/^import urllib.request, urllib.parse, urllib.error,urllib.request,urllib.error,urllib.parse,json,re,datetime,sys,http.cookiejar$/;"	kind:namespace	line:1
+getJsonReponse	../libraries/oldtweets/got/manager/TweetManager.py	/^	def getJsonReponse(tweetCriteria, refreshCursor, cookieJar, proxy):$/;"	kind:member	line:83
+getJsonReponse	../libraries/oldtweets/got3/manager/TweetManager.py	/^	def getJsonReponse(tweetCriteria, refreshCursor, cookieJar, proxy):$/;"	kind:member	line:90
+getTweets	../libraries/oldtweets/got/manager/TweetManager.py	/^	def getTweets(tweetCriteria, receiveBuffer=None, bufferLength=100, proxy=None):$/;"	kind:member	line:11
+getTweets	../libraries/oldtweets/got3/manager/TweetManager.py	/^	def getTweets(tweetCriteria, receiveBuffer=None, bufferLength=100, proxy=None):$/;"	kind:member	line:11
+get_bitcoin_values	../BitcoinService.py	/^def get_bitcoin_values(start_date, end_date):$/;"	kind:function	line:14
+get_coinmarketcap_date_range	../BitcoinService.py	/^def get_coinmarketcap_date_range(start_date, end_date):$/;"	kind:function	line:27
+get_freq_distr_for_tweets	../ProcessDataService.py	/^def get_freq_distr_for_tweets(tweets):$/;"	kind:function	line:60
+get_results_for_months	../app.py	/^def get_results_for_months():$/;"	kind:function	line:12
+get_sentiments_by_days	../ProcessDataService.py	/^def get_sentiments_by_days(tweets):$/;"	kind:function	line:34
+get_tweets	../twin_nl.py	/^def get_tweets(start_date, end_date, max_tweet_nr, query=None):$/;"	kind:function	line:15
+get_tweets_by_date	../twin_nl.py	/^def get_tweets_by_date(start_date, end_date, max_tweet_nr, query=None):$/;"	kind:function	line:25
+getopt	../libraries/oldtweets/Exporter.py	/^import sys,getopt,datetime,codecs$/;"	kind:namespace	line:2
+got	../libraries/oldtweets/Exporter.py	/^    import got$/;"	kind:namespace	line:4
+got	../libraries/oldtweets/Exporter.py	/^    import got3 as got$/;"	kind:namespace	line:6
+got	../libraries/oldtweets/Main.py	/^    import got$/;"	kind:namespace	line:3
+got	../libraries/oldtweets/Main.py	/^    import got3 as got$/;"	kind:namespace	line:5
+hello	../app.py	/^def hello():$/;"	kind:function	line:8
+http	../libraries/oldtweets/got3/manager/TweetManager.py	/^import urllib.request, urllib.parse, urllib.error,urllib.request,urllib.error,urllib.parse,json,re,datetime,sys,http.cookiejar$/;"	kind:namespace	line:1
+json	../libraries/oldtweets/got/manager/TweetManager.py	/^import urllib,urllib2,json,re,datetime,sys,cookielib$/;"	kind:namespace	line:1
+json	../libraries/oldtweets/got3/manager/TweetManager.py	/^import urllib.request, urllib.parse, urllib.error,urllib.request,urllib.error,urllib.parse,json,re,datetime,sys,http.cookiejar$/;"	kind:namespace	line:1
+json	../twin_nl.py	/^import json$/;"	kind:namespace	line:2
+jsonify	../app.py	/^from flask import Flask, jsonify, make_response, request$/;"	kind:namespace	line:1
+lexicon	../NRC.py	/^    lexicon='resources\/NRC-emotion-lexicon-wordlevel-alphabetized-v0.92.txt'$/;"	kind:variable	line:82
+lexiconData	../readNRCLexiconExcel.py	/^lexiconData = {}$/;"	kind:variable	line:13
+main	../libraries/oldtweets/Exporter.py	/^def main(argv):$/;"	kind:function	line:8
+main	../libraries/oldtweets/Main.py	/^def main():$/;"	kind:function	line:7
+main.py	../main.py	1;"	kind:file	line:1
+make_response	../app.py	/^from flask import Flask, jsonify, make_response, request$/;"	kind:namespace	line:1
+manager	../libraries/oldtweets/got/__init__.py	/^import manager/;"	kind:namespace	line:2
+manager	../libraries/oldtweets/got3/__init__.py	/^from . import manager/;"	kind:namespace	line:2
+matplotlib	../BitcoinService.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:5
+model	../NRC.py	/^    model='resources\/model.p'$/;"	kind:variable	line:81
+models	../libraries/oldtweets/got/__init__.py	/^import models$/;"	kind:namespace	line:1
+models	../libraries/oldtweets/got/manager/TweetManager.py	/^from .. import models$/;"	kind:namespace	line:2
+models	../libraries/oldtweets/got3/__init__.py	/^from . import models$/;"	kind:namespace	line:1
+models	../libraries/oldtweets/got3/manager/TweetManager.py	/^from .. import models$/;"	kind:namespace	line:2
+neg_label	../readNRCLexiconExcel.py	/^    neg_label = sheet['AQ' + str(row)].value$/;"	kind:variable	line:28
+nl_words	../readNRCLexiconExcel.py	/^nl_words = {}$/;"	kind:variable	line:17
+nltk	../ProcessDataService.py	/^import nltk$/;"	kind:namespace	line:3
+np	../BitcoinService.py	/^import numpy as np$/;"	kind:namespace	line:7
+openpyxl	../readNRCLexiconExcel.py	/^import openpyxl, pprint$/;"	kind:namespace	line:5
+os	../NRC.py	/^import os$/;"	kind:namespace	line:1
+parse	../libraries/oldtweets/got3/manager/TweetManager.py	/^import urllib.request, urllib.parse, urllib.error,urllib.request,urllib.error,urllib.parse,json,re,datetime,sys,http.cookiejar$/;"	kind:namespace	line:1
+pd	../BitcoinService.py	/^import pandas as pd$/;"	kind:namespace	line:2
+pickle	../NRC.py	/^import pickle$/;"	kind:namespace	line:2
+plt	../BitcoinService.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:5
+pos_label	../readNRCLexiconExcel.py	/^    pos_label = sheet['AP' + str(row)].value$/;"	kind:variable	line:29
+pprint	../readNRCLexiconExcel.py	/^import openpyxl, pprint$/;"	kind:namespace	line:5
+predict	../NRC.py	/^    def predict(self, text):$/;"	kind:member	line:32
+printTweet	../libraries/oldtweets/Main.py	/^	def printTweet(descr, t):$/;"	kind:function	line:9
+re	../BitcoinService.py	/^import re$/;"	kind:namespace	line:8
+re	../ProcessDataService.py	/^import re$/;"	kind:namespace	line:1
+re	../create_data.py	/^import re$/;"	kind:namespace	line:3
+re	../libraries/oldtweets/got/manager/TweetManager.py	/^import urllib,urllib2,json,re,datetime,sys,cookielib$/;"	kind:namespace	line:1
+re	../libraries/oldtweets/got3/manager/TweetManager.py	/^import urllib.request, urllib.parse, urllib.error,urllib.request,urllib.error,urllib.parse,json,re,datetime,sys,http.cookiejar$/;"	kind:namespace	line:1
+re	../twin_nl.py	/^import re$/;"	kind:namespace	line:3
+readNRCLexiconExcel.py	../readNRCLexiconExcel.py	1;"	kind:file	line:1
+read_data	../ReadDataService.py	/^def read_data(source, file_name):$/;"	kind:function	line:3
+receiveBuffer	../libraries/oldtweets/Exporter.py	/^		def receiveBuffer(tweets):$/;"	kind:function	line:64
+regular_tweets	../main.py	/^    regular_tweets = ReadDataService.read_data('sm', 'regular-tweets.csv')$/;"	kind:variable	line:11
+request	../app.py	/^from flask import Flask, jsonify, make_response, request$/;"	kind:namespace	line:1
+request	../libraries/oldtweets/got3/manager/TweetManager.py	/^import urllib.request, urllib.parse, urllib.error,urllib.request,urllib.error,urllib.parse,json,re,datetime,sys,http.cookiejar$/;"	kind:namespace	line:1
+request	../twin_nl.py	/^from urllib import request$/;"	kind:namespace	line:4
+request	../twin_nl.py	/^import urllib.request$/;"	kind:namespace	line:1
+resultFile	../readNRCLexiconExcel.py	/^resultFile = open('lexicon.txt', 'w')$/;"	kind:variable	line:52
+setLang	../libraries/oldtweets/got3/manager/TweetCriteria.py	/^	def setLang(self, Lang):$/;"	kind:member	line:26
+setMaxTweets	../libraries/oldtweets/got/manager/TweetCriteria.py	/^	def setMaxTweets(self, maxTweets):$/;"	kind:member	line:23
+setMaxTweets	../libraries/oldtweets/got3/manager/TweetCriteria.py	/^	def setMaxTweets(self, maxTweets):$/;"	kind:member	line:22
+setNear	../libraries/oldtweets/got/manager/TweetCriteria.py	/^	def setNear(self, near):$/;"	kind:member	line:31
+setQuerySearch	../libraries/oldtweets/got/manager/TweetCriteria.py	/^	def setQuerySearch(self, querySearch):$/;"	kind:member	line:19
+setQuerySearch	../libraries/oldtweets/got3/manager/TweetCriteria.py	/^	def setQuerySearch(self, querySearch):$/;"	kind:member	line:18
+setSince	../libraries/oldtweets/got/manager/TweetCriteria.py	/^	def setSince(self, since):$/;"	kind:member	line:11
+setSince	../libraries/oldtweets/got3/manager/TweetCriteria.py	/^	def setSince(self, since):$/;"	kind:member	line:10
+setTopTweets	../libraries/oldtweets/got/manager/TweetCriteria.py	/^	def setTopTweets(self, topTweets):$/;"	kind:member	line:27
+setTopTweets	../libraries/oldtweets/got3/manager/TweetCriteria.py	/^	def setTopTweets(self, topTweets):$/;"	kind:member	line:30
+setUntil	../libraries/oldtweets/got/manager/TweetCriteria.py	/^	def setUntil(self, until):$/;"	kind:member	line:15
+setUntil	../libraries/oldtweets/got3/manager/TweetCriteria.py	/^	def setUntil(self, until):$/;"	kind:member	line:14
+setUsername	../libraries/oldtweets/got/manager/TweetCriteria.py	/^	def setUsername(self, username):$/;"	kind:member	line:7
+setUsername	../libraries/oldtweets/got3/manager/TweetCriteria.py	/^	def setUsername(self, username):$/;"	kind:member	line:6
+setWithin	../libraries/oldtweets/got/manager/TweetCriteria.py	/^	def setWithin(self, within):$/;"	kind:member	line:35
+sheet	../readNRCLexiconExcel.py	/^sheet = wb.active$/;"	kind:variable	line:11
+sns	../BitcoinService.py	/^import seaborn as sns$/;"	kind:namespace	line:4
+split_tweets_by_day	../ProcessDataService.py	/^def split_tweets_by_day(tweets):$/;"	kind:function	line:11
+split_tweets_by_day	../twin_nl.py	/^def split_tweets_by_day(tweets):$/;"	kind:function	line:66
+sum_sentiment_scores	../ProcessDataService.py	/^def sum_sentiment_scores(days):$/;"	kind:function	line:38
+sys	../libraries/oldtweets/Exporter.py	/^import sys,getopt,datetime,codecs$/;"	kind:namespace	line:2
+sys	../libraries/oldtweets/Main.py	/^import sys$/;"	kind:namespace	line:1
+sys	../libraries/oldtweets/got/manager/TweetManager.py	/^import urllib,urllib2,json,re,datetime,sys,cookielib$/;"	kind:namespace	line:1
+sys	../libraries/oldtweets/got3/manager/TweetManager.py	/^import urllib.request, urllib.parse, urllib.error,urllib.request,urllib.error,urllib.parse,json,re,datetime,sys,http.cookiejar$/;"	kind:namespace	line:1
+time	../BitcoinService.py	/^import time$/;"	kind:namespace	line:3
+time	../create_data.py	/^import time$/;"	kind:namespace	line:4
+tweets	../app.py	/^def tweets():$/;"	kind:function	line:19
+twin_nl.py	../twin_nl.py	1;"	kind:file	line:1
+urllib	../libraries/oldtweets/got/manager/TweetManager.py	/^import urllib,urllib2,json,re,datetime,sys,cookielib$/;"	kind:namespace	line:1
+urllib	../libraries/oldtweets/got3/manager/TweetManager.py	/^import urllib.request, urllib.parse, urllib.error,urllib.request,urllib.error,urllib.parse,json,re,datetime,sys,http.cookiejar$/;"	kind:namespace	line:1
+urllib	../twin_nl.py	/^import urllib.request$/;"	kind:namespace	line:1
+urllib2	../libraries/oldtweets/got/manager/TweetManager.py	/^import urllib,urllib2,json,re,datetime,sys,cookielib$/;"	kind:namespace	line:1
+wb	../readNRCLexiconExcel.py	/^wb = openpyxl.load_workbook('lexi.xlsx')$/;"	kind:variable	line:9
+word_tokenize	../NRC.py	/^from nltk import word_tokenize$/;"	kind:namespace	line:4
+writeDayScoreToCSV	../CreateDataService.py	/^def writeDayScoreToCSV(file_name, source, days):$/;"	kind:function	line:33
+z	../readNRCLexiconExcel.py	/^        z = "{} {} {}\\n".format(x, y, str(lexiconData[x][y]))$/;"	kind:variable	line:56

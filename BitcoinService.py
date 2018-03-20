@@ -23,7 +23,6 @@ def get_bitcoin_values(start_date, end_date):
 
     return bitcoinMarketInfo
 
-
 def get_coinmarketcap_date_range(start_date, end_date):
     start_date_plain = re.search(REGEX_DAY_PATTERN, start_date).group(1)
     end_date_plain = re.search(REGEX_DAY_PATTERN, end_date).group(1)

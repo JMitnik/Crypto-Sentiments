@@ -1,52 +1,40 @@
 import React, { Component } from 'react';
 import CSVReader from 'react-csv-reader';
 import Plot from './Plot';
+import moment from 'moment';
 
 class BitcoinValues extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            bitcoinList: [],
-            selectedDate: new Date(2017, 10, 11).toDateString()
+            bitcoinList: []
         }
     }
 
-    handleCryptoCSV = (data) => {
-        this.setState({bitcoinList: data});
+    fetchBitcoinValues = (event) => {
+        if (this.props.activeStartDate) {
+            let sd = moment(this.props.activeStartDate).format('YMMDD')
+            let ed = moment(this.props.activeEndDate).format('YMMDD')
+            fetch(`http://127.0.0.1:5000/date/months?start_date=${sd}&end_date=${ed}`)
+            .then(res => res.json())
+            .then(data => this.setState({bitcoinList: data.result}));
+        }
     }
 
     getBitcoinValues = () => {
         if (this.state.bitcoinList) {
             return {
-                'x_axis': this.state.bitcoinList.slice(1).map(el => el[1]),
-                'y_axis': this.state.bitcoinList.slice(1).map(el => parseInt(el[3]))
+                'x_axis': this.state.bitcoinList.map(el => el['Date']).reverse(),
+                'y_axis': this.state.bitcoinList.map(el => el['Open']).reverse()
             };
         }
-    }
-
-    goBackInTime = () => {
-        let dateObj = new Date(this.state.selectedDate);
-
-        dateObj.setDate(dateObj.getDate() - 1);
-        this.setState({ selectedDate: dateObj.toDateString()})
-    }
-
-    goForwardInTime = () => {
-        let dateObj = new Date(this.state.selectedDate);
-
-        dateObj.setDate(dateObj.getDate() + 1);
-        this.setState({ selectedDate: dateObj.toDateString() })
     }
 
     render() {
         return (
             <div>
-                <div>
-                    <span onClick={this.goBackInTime} className="btn btn-primary"> Back </span>
-                    <span>Selected Date: {this.state.selectedDate}</span>
-                    <span onClick={this.goForwardInTime} className="btn btn-primary"> Forward </span>
-                </div>
-                <CSVReader onFileLoaded={this.handleCryptoCSV}></CSVReader>
+                <div onClick={e => this.fetchBitcoinValues(e)} className="btn btn-secondary">Get Crypto Values!</div>
+                {/* <CSVReader onFileLoaded={this.handleCryptoCSV}></CSVReader> */}
                 <Plot data={this.getBitcoinValues()}></Plot>
             </div>
          );

@@ -4,12 +4,20 @@ import Chart from 'chart.js';
 class Plot extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = {
+            intialized: false
+        }
+
+        this.chart = null;
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (this.props.data) {
-            this.renderData();
+        if (!this.state.intialized) {
+            if (this.props.data) {
+                this.renderData();
+            }
+        } else {
+            this.chart.update();
         }
     }
 
@@ -34,6 +42,10 @@ class Plot extends Component {
                 }
             }
         });
+
+        // this.setState({intialized: true});
+        // this.chart = myChart;
+        // console.log(this.chart);
     }
 
     render() {

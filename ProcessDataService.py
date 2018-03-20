@@ -2,8 +2,10 @@ import re
 from collections import defaultdict
 import nltk
 from NRC import *
+import datetime
 
 REGEX_DAY_PATTERN = '(.*)T'
+REGEX_V2_DAY_PATTERN = '(.*)/s'
 REGEX_TIME_PATTERN = ''
 DAY_STRING = "day"
 emo = EmotionModel("test.p", lexicon="lexicon.txt")
@@ -14,7 +16,8 @@ def split_tweets_by_day(tweets):
     # date_obj = defaultdict(list)
 
     for tweet in tweets:
-        date = re.search(REGEX_DAY_PATTERN, tweet['date']).group(1)
+        # date = re.search(REGEX_DAY_PATTERN, tweet['date']).group(1)
+        date = re.search(REGEX_V2_DAY_PATTERN, tweet['date'].group(1))
 
         index = None
         for (key, value) in enumerate(days):
@@ -30,6 +33,18 @@ def split_tweets_by_day(tweets):
             })
 
     return days
+
+def sort_dataframe_by_date(df):
+    col = df.iloc[:, 0]
+    for (index, date) in enumerate(col):
+        date = date.replace("T", "-")
+        date = date.split('.', 1)[0]
+        date = datetime.datetime.strptime(date, '%Y-%m-%d-%H:%M:%S')
+        col[index] = date
+
+    df.iloc[:, 0] = col
+    #%%
+    return df.sort_values(df.columns[0])
 
 def get_sentiments_by_days(tweets):
     collection = split_tweets_by_day(tweets)
